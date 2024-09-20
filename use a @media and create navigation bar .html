@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content:center ;
+            background-color: black;
+            padding: 15px;
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(203, 210, 204);
+            padding: 15px 20px; 
+            border: 1px solid black;
+            transition: background-color 0.8s;
+            
+           
+        }
+
+        nav a:hover {
+            color: black;
+            background-color: yellowgreen;
+        }
+
+        nav a:active {
+            background-color: blue;
+        }
+
+        @media all and (max-width: 600px) {
+            nav {
+                flex-direction: column; 
+            }
+
+            a {
+                padding: 10px; 
+                margin: 5px 0; 
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Navigation Bar</h1>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Product</a>
+        <a href="#">Discount Products</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Privacy</a>
+        <a href="#">Log In</a>
+    </nav>
+</body>
+
+</html>
